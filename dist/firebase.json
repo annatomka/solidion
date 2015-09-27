@@ -1,0 +1,9 @@
+{
+  "firebase": "solidion",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

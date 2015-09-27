@@ -1,0 +1,18 @@
+{
+  "name": "ng-solidion",
+  "version": "0.3.2",
+  "devDependencies": {
+    "angular": "~1.2",
+    "angular-animate": "",
+    "animate.css": "",
+    "angular-mocks": "~1.2",
+    "bootstrap": "~3.2",
+    "angular-bootstrap": "~0.10.0",
+    "angular-ui-router": "~0.2",
+    "ng-slide.and.push" :"",
+    "jquery":"",
+    "font-awesome":"4.2.0",
+    "scroll-animate-directive" : ""
+  },
+  "dependencies": {}
+}

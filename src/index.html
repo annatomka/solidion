@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="ngSolidion" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@joshdmiller">
+    <meta name="twitter:title" content="ngBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="twitter:creator" content="@joshdmiller">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/lib.css" />
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="templates/templates.js"></script>
+
+
+  </head>
+  <body>
+    <div>
+<nav ng-controller="NavCtrl" ng-push-menu="menu" >
+<a class="grid-button rearrange" ng-class="{back : isMenuOpen}" ng-click="toggleMenu()" type="button" role="button" aria-label="Toggle Navigation" >
+  <span class="grid"></span>
+</a>
+
+<ng-slide-push-menu id="menu" position="right">
+  <h3>Menu</h3>
+  <a href="#">About</a>
+  <a href="#">Team</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</ng-slide-push-menu>
+</nav>
+    </div>
+
+    <div ui-view="main"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <ul class="social">
+            <li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="fa fa-google-plus"></i></a></li>
+            <li><a target="_blank" href="http://twitter.com/joshdmiller"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="http://linkedin.com/in/joshdmiller"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="http://github.com/ngbp/ngbp"><i class="fa fa-github"></i></a></li>
+          </ul>
+          
+
+          <p>
+            <i class="fa fa-copyright"></i> 2014 <a href="http://uxworld.eu">UX World</a>. 
+            <br />
+            Solidion is based on
+            <a href="http://www.angularjs.org">AngularJS</a>,
+            <a href="http://getbootstrap.com">Bootstrap</a>, 
+            <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
+            and 
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
